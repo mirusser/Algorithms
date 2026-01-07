@@ -1,0 +1,80 @@
+# =========================
+# .NET build results
+# =========================
+bin/
+obj/
+[Bb]uild/
+[Ll]ogs/
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+*.DotSettings.user
+*.DotSettings
+
+# Rider caches (sometimes outside .idea)
+.idea_modules/
+
+# =========================
+# Visual Studio / .NET tools
+# =========================
+.vs/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+.nuget/
+.nuget/packages/
+.nuget/package-cache/
+
+# =========================
+# .NET publish / artifacts
+# =========================
+publish/
+artifacts/
+
+# =========================
+# Test results & coverage
+# =========================
+TestResults/
+coverage/
+coverage.*
+*.trx
+
+# =========================
+# OS / Linux
+# =========================
+*~
+*.swp
+*.swo
+*.tmp
+.DS_Store
+Thumbs.db
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+secrets.json
+appsettings.*.json
+!appsettings.json
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Optional: EF Core
+# =========================
+Migrations/*.Designer.cs
