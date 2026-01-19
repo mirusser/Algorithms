@@ -2,7 +2,7 @@ using TestConsole.SlidingWindow;
 
 namespace AlgorithmsTests.SlidingWindow;
 
-public class LongestSubstringTests
+public class LongestSubstringWithAtMostKDistinctTests
 {
     public static TheoryData<string, int, int> LongestSubstringTestCases
         => new()
@@ -49,7 +49,7 @@ public class LongestSubstringTests
     public void ReturnsExpectedResult_ForGivenInputs(string s, int k, int expected)
     {
         // Arrange
-        var sut = new LongestSubstring();
+        var sut = new LongestSubstringWithAtMostKDistinct();
 
         // Act
         var result = sut.Implementation(s, k);
@@ -61,14 +61,14 @@ public class LongestSubstringTests
     [Fact]
     public void ThrowsArgumentNullException_WhenStringIsNull()
     {
-        var sut = new LongestSubstring();
+        var sut = new LongestSubstringWithAtMostKDistinct();
         Assert.Throws<ArgumentNullException>(() => sut.Implementation(null!, 2));
     }
 
     [Fact]
     public void ThrowsArgumentOutOfRangeException_WhenKIsNegative()
     {
-        var sut = new LongestSubstring();
+        var sut = new LongestSubstringWithAtMostKDistinct();
         Assert.Throws<ArgumentOutOfRangeException>(() => sut.Implementation("abc", -1));
     }
 }

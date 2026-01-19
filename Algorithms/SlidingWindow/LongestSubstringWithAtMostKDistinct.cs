@@ -1,6 +1,6 @@
 namespace TestConsole.SlidingWindow;
 
-public class LongestSubstring
+public class LongestSubstringWithAtMostKDistinct
 {
     /// <summary>
     /// Returns the length of the longest contiguous substring that contains
@@ -66,7 +66,9 @@ public class LongestSubstring
                 var leftValue = s[left];
                 distinctCharactersFreq[leftValue]--;
                 if (distinctCharactersFreq[leftValue] == 0)
+                {
                     distinctCharactersFreq.Remove(leftValue);
+                }
                 left++;
             }
 
