@@ -1,6 +1,6 @@
-using TestConsole.HashBasedLookup;
+using TestConsole.SlidingWindow;
 
-namespace AlgorithmsTests.HashBasedLookupTests;
+namespace AlgorithmsTests.SlidingWindow;
 
 public class LongestSubstringTests
 {

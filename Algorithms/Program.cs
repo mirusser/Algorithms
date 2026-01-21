@@ -3,7 +3,7 @@ using BenchmarkDotNet.Running;
 using TestConsole;
 using TestConsole.HashBasedLookup;
 using FirstNonRepeatingCharacter = TestConsole.HashBasedLookup.FirstNonRepeatingCharacter;
-using LongestSubstring = TestConsole.HashBasedLookup.LongestSubstring;
+using LongestSubstring = TestConsole.SlidingWindow.LongestSubstring;
 
 Console.WriteLine("Running...");
 Console.WriteLine($"{Environment.NewLine}Finished");
