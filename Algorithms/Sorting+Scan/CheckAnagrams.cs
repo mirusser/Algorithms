@@ -2,6 +2,10 @@ namespace TestConsole.Sorting_Scan;
 
 public class CheckAnagrams
 {
+    // Problem overview:
+    // Given two strings s and t, determine whether they are anagrams of each other.
+    // Two strings are anagrams if they contain the same characters with the same frequencies, just in a different order.
+    
     public bool Implementation(string s, string t)
     {
         if (s.Length != t.Length)
@@ -26,7 +30,9 @@ public class CheckAnagrams
     public bool AreAnagramsByFrequency(string word1, string word2)
     {
         if (word1.Length != word2.Length)
+        {
             return false;
+        }
 
         var counts = new Dictionary<char, int>();
 
@@ -40,11 +46,19 @@ public class CheckAnagrams
         foreach (char c in word2)
         {
             if (!counts.TryGetValue(c, out int value))
+            {
                 return false;
+            }
 
             value--;
-            if (value == 0) counts.Remove(c);
-            else counts[c] = value;
+            if (value == 0)
+            {
+                counts.Remove(c);
+            }
+            else
+            {
+                counts[c] = value;
+            }
         }
 
         return counts.Count == 0;
@@ -53,7 +67,9 @@ public class CheckAnagrams
     public bool AreAnagramsBySorting(string word1, string word2)
     {
         if (word1.Length != word2.Length)
+        {
             return false;
+        }
 
         var word1Temp = word1.OrderBy(x => x);
         var word2Temp = word2.OrderBy(x => x);

@@ -2,6 +2,10 @@ namespace TestConsole.TwoPointers;
 
 public class IsArrayPalindrome
 {
+    // Problem overview:
+    // Given an integer array, determine whether it reads the same forward and backward.
+    // (If given array of integers is a palindrome)
+    
     public bool Implementation(int[] array)
     {
         if (array is null)

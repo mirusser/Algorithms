@@ -2,6 +2,13 @@ namespace TestConsole.HashBasedLookup;
 
 public class ValidAnagram
 {
+    // Problem overview:
+    // Given two strings s and t, determine whether t is an anagram of s.
+
+    // Two strings are anagrams if they contain the same characters with the same frequencies,
+    // just in a different order.
+    
+    
     public bool IsAnagram(string s, string t)
     {
         if (s.Length != t.Length)
@@ -24,6 +31,6 @@ public class ValidAnagram
             }
         }
 
-        return frequencies.All(f => f.Value == 0);;
+        return frequencies.All(f => f.Value == 0);
     }
 }

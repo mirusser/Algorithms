@@ -2,9 +2,13 @@ namespace TestConsole.TwoPointers;
 
 public class PairWithTargetSum
 {
+    // Problem Overview: Pair With Target Sum (Sorted Array)
+    // Given a sorted integer array nums and an integer target,
+    // determine whether there exists a pair of two distinct elements whose sum equals target.
+    
     public bool Implementation(int[] nums, int target)
     {
-        if (nums == null || nums.Length < 2)
+        if (nums.Length < 2)
         {
             return false;
         }

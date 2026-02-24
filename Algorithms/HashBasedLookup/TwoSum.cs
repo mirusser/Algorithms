@@ -2,6 +2,10 @@ namespace TestConsole.HashBasedLookup;
 
 public class TwoSum
 {
+    // Problem overview:
+    // Given an integer array nums and an integer target, determine whether there are two distinct elements
+    // in the array whose sum equals target.
+        
     // I iterate through the array once while keeping a hash set of previously seen numbers.
     // For each number, I compute the value needed to reach the target and check if it already exists in the set.
     // If it does, I return true immediately.

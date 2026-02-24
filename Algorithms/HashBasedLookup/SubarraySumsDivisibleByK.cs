@@ -2,6 +2,10 @@ namespace TestConsole.HashBasedLookup;
 
 public class SubarraySumsDivisibleByK
 {
+    // Problem overview:
+    // Given an array of integers: nums and an integer: k,
+    // return the number of non-empty subarrays whose sum is divisible by k.
+
     public int Implementation(int[] nums, int k)
     {
         var count = 0;
@@ -16,17 +20,20 @@ public class SubarraySumsDivisibleByK
         {
             prefixSum += num;
 
-            var rem = prefixSum % k;
-            if (rem < 0) rem += k; // normalize for negatives
+            var reminder = prefixSum % k;
+            if (reminder < 0)
+            {
+                reminder += k; // normalize for negatives
+            }
 
-            if (remainderFreq.TryGetValue(rem, out var freq))
+            if (remainderFreq.TryGetValue(reminder, out var freq))
             {
                 count += freq;
             }
 
-            if (!remainderFreq.TryAdd(rem, 1))
+            if (!remainderFreq.TryAdd(reminder, 1))
             {
-                remainderFreq[rem]++;
+                remainderFreq[reminder]++;
             }
         }
 

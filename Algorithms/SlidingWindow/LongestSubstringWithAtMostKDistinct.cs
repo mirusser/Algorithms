@@ -81,7 +81,9 @@ public class LongestSubstringWithAtMostKDistinct
     public int StandardSolution(string s, int k)
     {
         if (string.IsNullOrEmpty(s) || k <= 0)
+        {
             return 0;
+        }
 
         var freq = new Dictionary<char, int>();
         int left = 0, maxLen = 0;

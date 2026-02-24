@@ -2,6 +2,10 @@ namespace TestConsole.SlidingWindow;
 
 public class LongestSubstring
 {
+    // Problem overview:
+    // Given a string s, return the length of the longest substring that contains no repeated characters.
+    // A substring is a contiguous sequence of characters.
+    
     // Use a sliding window to find the longest substring without repeating characters.
     // A dictionary stores the last index where each character was seen.
     // When a duplicate appears inside the current window,

@@ -2,6 +2,14 @@ namespace TestConsole.Sorting_Scan;
 
 public class MeetingRooms
 {
+    // Problem Overview: Meeting Rooms
+    // Given an array of meeting time intervals, determine whether a person can attend all meetings.
+    // Each interval is represented as [start, end].
+    // Return:
+        // true if no meetings overlap
+        // false if any two meetings overlap
+        
+        
     public bool Implementation(int[][] intervals)
     {
         ArgumentNullException.ThrowIfNull(intervals);
