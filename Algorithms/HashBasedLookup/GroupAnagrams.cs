@@ -2,6 +2,13 @@ namespace TestConsole.HashBasedLookup;
 
 public class GroupAnagrams
 {
+    // Problem overview
+    // Given an array of strings strs, group the strings that are anagrams of each other.
+    // Two strings are anagrams if they contain the same characters with the same frequencies, just in a different order.
+    // Return the grouped anagrams as a list of string groups.        
+       
+    // ---
+    
     // For each string, compute a canonical "signature" by sorting its characters.
     // All anagrams share the same signature, so we can use it as a Dictionary key.
     // Each key maps to a bucket (list) of original strings with that signature.
@@ -35,28 +42,28 @@ public class GroupAnagrams
     // (each sorted string with the same sequence and length of characters is an anagram)
     // I sort each string and use it as a key (anagram) in dictionary
     // then check if the key (anagram) already exists in the dictionary,
-    // if doesn't exist I initiate the key with value for the dictionary
+    // if it doesn't exist I initiate the key with value for the dictionary
     // if it already exists I add it to the values of the key
 
     // Use a 26-count signature instead of string sorting.
     public List<List<string>> GroupAnagramsOptimized(string[] strs)
     {
-        var map = new Dictionary<string, List<string>>();
+        var groupedAnagrams = new Dictionary<string, List<string>>();
 
         foreach (var s in strs)
         {
             string key = GetStringSignature(s);
 
-            if (!map.TryGetValue(key, out var bucket))
+            if (!groupedAnagrams.TryGetValue(key, out var bucket))
             {
                 bucket = [];
-                map[key] = bucket;
+                groupedAnagrams[key] = bucket;
             }
 
             bucket.Add(s);
         }
 
-        return map.Values.ToList();
+        return groupedAnagrams.Values.ToList();
 
         string GetStringSignature(string s)
         {

@@ -28,7 +28,7 @@ public class FirstNonRepeatingCharacterTests
         // Act
         var result = sut.FirstUniqueCharIndex(nums);
 
-        // Arrange
+        // Assert
         Assert.Equal(expected, result);
     }
 }

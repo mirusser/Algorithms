@@ -27,7 +27,7 @@ public class ContainsDuplicateTests
         // Act
         var result = sut.Implementation(nums);
 
-        // Arrange
+        // Assert
         Assert.Equal(expected, result);
     }
 }

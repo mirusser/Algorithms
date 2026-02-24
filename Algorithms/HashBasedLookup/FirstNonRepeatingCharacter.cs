@@ -2,6 +2,10 @@ namespace TestConsole.HashBasedLookup;
 
 public class FirstNonRepeatingCharacter
 {
+    // Problem overview:
+    // Given a string s, return the index of the first character that appears exactly once.
+    // If no such character exists, return -1.
+    
     // Pattern: Hash-based lookup
     // Naive: For each character, scan the rest of the string (O(n^2))
     // Optimized: Count frequencies with a dictionary, then scan once more (O(n))
@@ -27,10 +31,10 @@ public class FirstNonRepeatingCharacter
             }
         }
 
-        // Technically I could iterate through dictionary: `frequencies` instead of original string 
-        // cause .net implementation of dictionary actually preserve order of added keys
-        // but that's an implementation detail,
-        // or alternatively I could use OrderedDictionary
+        // Technically I could iterate through dictionary: `frequencies` instead of the original string 
+        // because .NET implementation of dictionary actually preserve order of added keys,
+        // but that's an implementation detail;
+        // Alternatively I could use OrderedDictionary
         
         for (var i = 0; i < s.Length; i++)
         {

@@ -2,16 +2,22 @@ namespace TestConsole.HashBasedLookup;
 
 public class ContainsDuplicate
 {
+    // Problem Overview:
+    // Given an integer array nums, determine whether any value appears at least twice.
+    
+    // Return:
+    // true → if there is at least one duplicate
+    // false → if all elements are distinct
+    
     // Q: Why use HashSet
     // A: Because I only care whether I've seen a value before, or not
     // HashSet gives O(1) average lookup and insertion, 
-    // and method Add method immediately tells if the value already exists
+    // and method `Add` immediately tells if the value already exists
     // which let me exit early
     
     // Complexity
     // Time: O(n) (How long does it take to run)
     // Space: O(n) (How much extra memory does it use)
-    
     
     public bool Implementation(int[] nums)
     {

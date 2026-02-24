@@ -2,6 +2,11 @@ namespace TestConsole.HashBasedLookup;
 
 public class LongestConsecutiveSequence
 {
+    // Problem overview:
+    // Given an unsorted integer array nums, return the length of the longest sequence of consecutive integers.
+    // A consecutive sequence means numbers follow each other by +1, regardless of their order in the input.
+    
+    
     // Use a HashSet for O(1) lookups and to eliminate duplicates.
     // For each number, start a sequence only if its predecessor (number - 1) does not exist.
     // This guarantees each consecutive sequence is counted exactly once.
