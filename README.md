@@ -25,26 +25,35 @@ Additional notations:
 | **Big-O**         | “How slow can this algorithm be _at worst_?” |
 | **Big-Ω (Omega)** | “How fast can this algorithm be _at best_?”  |
 | **Big-Θ (Theta)** | “What is the _tight, exact_ growth rate?”    |
+
+
 Big-O ignores constants and lower-order terms.
 In real code, constants, memory allocations, and early exits can still matter.
 
 ## Complexity
+
 - Time: How long does it take to run
 - Space: How much extra memory does it use
+  
 ### ⏱️ Time Complexity
+
 **Time complexity** describes how the **running time grows** as the input size grows.
+
 > “If the input gets bigger, how many more operations does my algorithm perform?”
 
  Example intuition
 - Checking every pair in a list → slow growth
 - Scanning once through a list → fast growth
+
 #### 💾 Space Complexity
+
 **Space complexity** describes how much **additional memory** your algorithm uses **beyond the input itself**.
 > “As the input grows, how much extra memory does my algorithm need?”
 
 Important:
 - Input itself **does not count**
 - Only **extra allocations** count
+
 ---
 
 ## Big-O Notations/Complexity Classes
@@ -70,6 +79,7 @@ string value = dict[42]; // O(1) average
 ```
 
 ### O(log n) — Logarithmic Time
+
 Each step cuts the problem in half.
 
 Example: Binary search
@@ -101,6 +111,7 @@ Input size:
 That’s why logarithmic algorithms scale extremely well.
 
 ### O(n) — Linear Time
+
 Time grows directly with input size.
 
 Example: Loop through a list
@@ -119,6 +130,7 @@ int Sum(int[] numbers)
 If the array doubles → work doubles.
 
 ### O(n log n) — Linearithmic Time
+
 Very common in efficient sorting algorithms.
 
 Example: Sorting
@@ -135,6 +147,7 @@ Rule of thumb:
 If an algorithm processes every element and does a logarithmic operation per element → O(n log n)
 
 ### O(n²) — Quadratic Time
+
 Usually caused by nested loops.
 
 Example: Comparing every pair
@@ -156,6 +169,7 @@ If n = 1,000:
 Quadratic algorithms become slow very quickly.
 
 ### O(2ⁿ) — Exponential Time
+
 Each input element doubles the work.
 
 Example: Recursive Fibonacci (naive)
