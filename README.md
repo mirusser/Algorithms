@@ -78,6 +78,10 @@ dict[42] = "Answer";
 string value = dict[42]; // O(1) average
 ```
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195701.png" width="400" />
+</p>
+
 ### O(log n) — Logarithmic Time
 
 Each step cuts the problem in half.
@@ -110,6 +114,10 @@ Input size:
 1,000,000 → ~20 steps
 That’s why logarithmic algorithms scale extremely well.
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195720.png" width="400" />
+</p>
+
 ### O(n) — Linear Time
 
 Time grows directly with input size.
@@ -129,6 +137,10 @@ int Sum(int[] numbers)
 
 If the array doubles → work doubles.
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195733.png" width="400" />
+</p>
+
 ### O(n log n) — Linearithmic Time
 
 Very common in efficient sorting algorithms.
@@ -145,6 +157,10 @@ Combines quicksort, heapsort, insertion sort
 
 Rule of thumb:
 If an algorithm processes every element and does a logarithmic operation per element → O(n log n)
+
+<p>
+  <img src="Images/Pasted%20image%2020251227195741.png" width="400" />
+</p>
 
 ### O(n²) — Quadratic Time
 
@@ -168,6 +184,10 @@ If n = 1,000:
 1,000,000 iterations 
 Quadratic algorithms become slow very quickly.
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195801.png" width="400" />
+</p>
+
 ### O(2ⁿ) — Exponential Time
 
 Each input element doubles the work.
@@ -185,6 +205,10 @@ Fib(40) already takes noticeable time
 
 This is why memoization or DP is critical
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195806.png" width="400" />
+</p>
+
 ---
 
 ## Big-O of Common C# Collections
@@ -200,23 +224,10 @@ This is why memoization or DP is critical
 
 ---
 
-## Visual graphs for Big-O notation
 
-<p>
-  <img src="Images/Pasted%20image%2020251227195701.png" width="400" />
-</p>
-<p>
-  <img src="Images/Pasted%20image%2020251227195720.png" width="400" />
-</p>
-<p>
-  <img src="Images/Pasted%20image%2020251227195733.png" width="400" />
-</p>
-<p>
-  <img src="Images/Pasted%20image%2020251227195741.png" width="400" />
-</p>
-<p>
-  <img src="Images/Pasted%20image%2020251227195801.png" width="400" />
-</p>
-<p>
-  <img src="Images/Pasted%20image%2020251227195806.png" width="400" />
-</p>
+
+
+
+
+
+
