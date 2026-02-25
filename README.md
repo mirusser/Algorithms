@@ -185,7 +185,28 @@ This is why memoization or DP is critical
 | `Array.Sort`              | Sort                 | O(n log n) |
 
 ---
+
 ## Visual graphs for Big-O notation
+
+<p>
+  <img src="Images/Pasted%20image%2020251227195701.png" width="400" />
+</p>
+<p>
+  <img src="Images/Pasted%20image%2020251227195720.png" width="400" />
+</p>
+<p>
+  <img src="Images/Pasted%20image%2020251227195733.png" width="400" />
+</p>
+<p>
+  <img src="Images/Pasted%20image%2020251227195741.png" width="400" />
+</p>
+<p>
+  <img src="Images/Pasted%20image%2020251227195801.png" width="400" />
+</p>
+<p>
+  <img src="Images/Pasted%20image%2020251227195806.png" width="400" />
+</p>
+
 ![[Pasted image 20251227195701.png|400]]
 ![[Pasted image 20251227195720.png|400]]
 ![[Pasted image 20251227195733.png|400]]
