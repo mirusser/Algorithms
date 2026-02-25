@@ -2,6 +2,14 @@ namespace TestConsole.Recursion_DFS;
 
 public class Fibonacci
 {
+    // Problem Overview: Fibonacci Number (Recursion + Memoization / Iteration)
+    // Given a non-negative integer n, compute the n-th Fibonacci number.
+
+    // The Fibonacci sequence is defined as:
+    // F(0) = 0
+    // F(1) = 1
+    // F(n) = F(n - 1) + F(n - 2) for n >= 2
+
     public long Implementation(int n)
     {
         ArgumentOutOfRangeException.ThrowIfNegative(n);
@@ -10,7 +18,7 @@ public class Fibonacci
 
         //-1 means “not computed yet”
         Array.Fill(cache, -1);
-        
+
         return FibCache(n, cache);
     }
 
@@ -20,7 +28,7 @@ public class Fibonacci
         {
             return n;
         }
-        
+
         if (cache[n] != -1)
         {
             return cache[n];

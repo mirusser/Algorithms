@@ -2,6 +2,11 @@ namespace TestConsole.Sorting_Scan;
 
 public class MergeIntervals
 {
+    // Problem Overview:
+    // Given an array of intervals, merge all intervals that overlap (or touch)
+    // and return the resulting set of non-overlapping intervals.
+    // Each interval is represented as [start, end].
+
     public int[][] Implementation(int[][] intervals)
     {
         ArgumentNullException.ThrowIfNull(intervals);

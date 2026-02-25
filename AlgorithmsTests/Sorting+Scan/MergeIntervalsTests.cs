@@ -21,7 +21,7 @@ public class MergeIntervalsTests
 
             // Nested interval: inner fully contained in outer
             { [[1, 10], [2, 3], [4, 8]], [[1, 10]] },
-            //
+            
             // Duplicate intervals
             { [[1, 3], [1, 3], [1, 3]], [[1, 3]] },
 
