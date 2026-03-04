@@ -25,26 +25,35 @@ Additional notations:
 | **Big-O**         | “How slow can this algorithm be _at worst_?” |
 | **Big-Ω (Omega)** | “How fast can this algorithm be _at best_?”  |
 | **Big-Θ (Theta)** | “What is the _tight, exact_ growth rate?”    |
+
+
 Big-O ignores constants and lower-order terms.
 In real code, constants, memory allocations, and early exits can still matter.
 
 ## Complexity
+
 - Time: How long does it take to run
 - Space: How much extra memory does it use
+  
 ### ⏱️ Time Complexity
+
 **Time complexity** describes how the **running time grows** as the input size grows.
+
 > “If the input gets bigger, how many more operations does my algorithm perform?”
 
  Example intuition
 - Checking every pair in a list → slow growth
 - Scanning once through a list → fast growth
+
 #### 💾 Space Complexity
+
 **Space complexity** describes how much **additional memory** your algorithm uses **beyond the input itself**.
 > “As the input grows, how much extra memory does my algorithm need?”
 
 Important:
 - Input itself **does not count**
 - Only **extra allocations** count
+
 ---
 
 ## Big-O Notations/Complexity Classes
@@ -69,7 +78,12 @@ dict[42] = "Answer";
 string value = dict[42]; // O(1) average
 ```
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195701.png" width="400" />
+</p>
+
 ### O(log n) — Logarithmic Time
+
 Each step cuts the problem in half.
 
 Example: Binary search
@@ -100,7 +114,12 @@ Input size:
 1,000,000 → ~20 steps
 That’s why logarithmic algorithms scale extremely well.
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195720.png" width="400" />
+</p>
+
 ### O(n) — Linear Time
+
 Time grows directly with input size.
 
 Example: Loop through a list
@@ -118,7 +137,12 @@ int Sum(int[] numbers)
 
 If the array doubles → work doubles.
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195733.png" width="400" />
+</p>
+
 ### O(n log n) — Linearithmic Time
+
 Very common in efficient sorting algorithms.
 
 Example: Sorting
@@ -134,7 +158,12 @@ Combines quicksort, heapsort, insertion sort
 Rule of thumb:
 If an algorithm processes every element and does a logarithmic operation per element → O(n log n)
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195741.png" width="400" />
+</p>
+
 ### O(n²) — Quadratic Time
+
 Usually caused by nested loops.
 
 Example: Comparing every pair
@@ -155,7 +184,12 @@ If n = 1,000:
 1,000,000 iterations 
 Quadratic algorithms become slow very quickly.
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195801.png" width="400" />
+</p>
+
 ### O(2ⁿ) — Exponential Time
+
 Each input element doubles the work.
 
 Example: Recursive Fibonacci (naive)
@@ -171,6 +205,10 @@ Fib(40) already takes noticeable time
 
 This is why memoization or DP is critical
 
+<p>
+  <img src="Images/Pasted%20image%2020251227195806.png" width="400" />
+</p>
+
 ---
 
 ## Big-O of Common C# Collections
@@ -185,10 +223,11 @@ This is why memoization or DP is critical
 | `Array.Sort`              | Sort                 | O(n log n) |
 
 ---
-## Visual graphs for Big-O notation
-![[Pasted image 20251227195701.png|400]]
-![[Pasted image 20251227195720.png|400]]
-![[Pasted image 20251227195733.png|400]]
-![[Pasted image 20251227195741.png|400]]
-![[Pasted image 20251227195801.png|400]]
-![[Pasted image 20251227195806.png|400]]
+
+
+
+
+
+
+
+
